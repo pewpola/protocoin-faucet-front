@@ -18,7 +18,7 @@ function App() {
         <p className="lead">Once a day, earn 1.000 coins just connecting your MetaMask below.</p>
         <p className="lead">
           <a href="#" className="btn btn-lg btn-secondary fw-bold border-white bg-white">
-            <img src="/public/metamask.svg"/>
+            <img src="/public/metamask.svg" alt="metamask logo" width={48}/>
             Connect MetaMask
           </a>
         </p>
