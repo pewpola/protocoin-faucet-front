@@ -3,7 +3,9 @@ import mint from "./services/Web3Service";
 const App = () => {
 
   const onButtonClick = () => {
-    mint();
+    mint()
+      .then(() => console.log())
+      .catch(err => alert(err.msg));
   }
 
   return (
