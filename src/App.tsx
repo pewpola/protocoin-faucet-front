@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+import mint from "./services/Web3Service";
 
 const App = () => {
 
   const onButtonClick = () => {
-    
+    mint();
   }
 
   return (
@@ -22,7 +22,7 @@ const App = () => {
         <h1>Get your ProtoCoins</h1>
         <p className="lead">Once a day, earn 1.000 coins just connecting your MetaMask below.</p>
         <p className="lead">
-          <a href="#" className="btn btn-lg btn-secondary fw-bold border-white bg-white">
+          <a href="#" onClick={() => onButtonClick()} className="btn btn-lg btn-secondary fw-bold border-white bg-white">
             <img src="/assets/MetaMask_fox.svg.png" alt="metamask logo" width={42}/>
             Connect MetaMask
           </a>
