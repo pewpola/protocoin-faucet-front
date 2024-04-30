@@ -1,6 +1,11 @@
 import logo from './logo.svg';
 
-function App() {
+const App = () => {
+
+  const onButtonClick = () => {
+    
+  }
+
   return (
     <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header className="mb-auto">
