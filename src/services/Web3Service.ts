@@ -8,7 +8,9 @@ const mint = async() => {
 
     const web3 =  new Web3(window.ethereum);
     const accounts = await web3.eth.requestAccounts();
+
     if (!accounts || !accounts.length) throw new Error("No account allowed!");
+    
     alert(accounts[0]);
 
     const contract = new web3.eth.Contract(ABI as AbiItem[], CONTRACT_ADDRESS, { from: accounts[0] });
