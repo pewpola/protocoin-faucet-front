@@ -26,11 +26,11 @@ const App = () => {
 
       <main className="px-3">
         <h1>Get your ProtoCoins</h1>
-        <p className="lead">Once a day, earn 1.000 coins just connecting your MetaMask below.</p>
+        <p className="lead">Once a day, earn 7 coins just connecting your MetaMask below.</p>
         <p className="lead">
           <a href="#" onClick={() => onButtonClick()} className="btn btn-lg btn-secondary fw-bold border-white bg-white">
             <img src="/assets/MetaMask_fox.svg.png" alt="metamask logo" width={42}/>
-            Connect MetaMask
+            Get my tokens
           </a>
         </p>
         <p className="lead">
