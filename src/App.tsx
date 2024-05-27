@@ -9,7 +9,7 @@ const App = () => {
     setMessage("Requesting your tokens...");
     mint()
       .then((tx) => setMessage("Your tokens were sent. Tx: " + tx))
-      .catch(err => setMessage(err.msg));
+      .catch(err => setMessage(err.response ? err.response.data : err.msg));
   }
 
   return (
